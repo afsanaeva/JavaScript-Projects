@@ -43,7 +43,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         // Add CURRENT score to GLOBAL score
         scores[activePlayer] += roundScore;
 
-        // Update the UI
+       
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
         // Check if player won the game
@@ -72,9 +72,7 @@ function nextPlayer() {
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
 
-    //document.querySelector('.player-0-panel').classList.remove('active');
-    //document.querySelector('.player-1-panel').classList.add('active');
-
+    
     document.querySelector('.dice').style.display = 'none';
 }
 
